@@ -1,0 +1,51 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Create your own map
+$rosado: (
+  "rosado": #f13feb
+);
+$dorado: (
+    "dorado": #ac9437
+);
+$morado: (
+    "morado": #4d2fea
+);
+$azulvioleta: (
+    "azulvioleta": #8a2be2
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $rosado);
+$theme-colors: map-merge($theme-colors, $dorado);
+$theme-colors: map-merge($theme-colors, $morado);
+$theme-colors: map-merge($theme-colors, $azulvioleta);
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tamaño-letra{
+    font-size: 1.5em;
+}
+
+.tamaño-img{
+    width: 250px;
+    height: 250px;
+    padding-left: 1.2em;
+}
+
+.card{
+    color: aliceblue;
+    @extend .tamaño-letra;
+    margin-top: 2em;
+    img {
+        @extend .tamaño-img;
+    }
+}
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
