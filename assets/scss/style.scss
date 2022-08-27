@@ -22,6 +22,9 @@ $theme-colors: map-merge($theme-colors, $dorado);
 $theme-colors: map-merge($theme-colors, $morado);
 $theme-colors: map-merge($theme-colors, $azulvioleta);
 
+
+//modificacion cards
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -46,6 +49,5 @@ $theme-colors: map-merge($theme-colors, $azulvioleta);
         @extend .tamaño-img;
     }
 }
-
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
